@@ -1,0 +1,102 @@
+/* Reset and Base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* HEADER WITH BACKGROUND IMAGE */
+.header_area {
+  background: url("../images/university_logo.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 20px 0;
+  color: white;
+}
+
+.header_area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  z-index: 0;
+}
+
+.head,
+.menu {
+  position: relative;
+  z-index: 1;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 20px;
+}
+
+.uniname h2 {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.dateshow {
+  text-align: right;
+  padding: 10px 20px;
+  color: #ccc;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  float: left;
+  background: #34495e;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar .spcl {
+  font-weight: bold;
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+
+/* Main Content */
+.content {
+  margin-left: 240px;
+  padding: 30px;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.stickside {
+  position: fixed;
+  top: 90px;
+}
